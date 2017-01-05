@@ -1,0 +1,18 @@
+This little project was started because of my frustration
+when plotting many similar 2D plots of matrices for my master thesis.
+
+I had done alot of simulations of superconducting films and wanted to make a movies of the evolution of the 2D system. I had a time series of various scalar and vector fields, but no automated way to produce plots.
+
+Using numpy and matplotlib I came up with the following features for the resulting script:
+- We want to select a specific area of the 2D matrix so in the program you must specify xmin, xmax, ymin, ymax. Make sure you don't set them out of bounds of your matrices.
+- For a movie we want the colormap to be normalized for all the data of a given type. Therefore we find the maximum and minimum of all the datafiles and use these values for calibrating the colors in the plots. 
+- Choose the colormap for each datatype. red for temperature, green for magnetic field etc.
+- We might want to add equipotential lines to the plot, but in my case this might be a different scalar field from the one used in the colorplot.
+- We want to save the parameters used by the script in the directory where the plots are saved. This is done by copying parameters.py to the directory where the plots are saved.
+- The plogram asks you to confirm overwriting to an existing directory. This makes it harder to lose your work!
+- For every series of plots you will get a correctly normalized colorbar. Choose between a horizontal and vertical colorbar!
+- You can specify the size of the labels and axis ticks if they are not the right size for you. This can also be done for the colorbar. You can also choose the position of the axis ticks.
+- The plots and colorbar are saved with minimal whitespace so that they are easy to use in LaTeX etc.
+- Choose format by specifying the savefile extension. Example: "temperature.pdf" og "temperature.png"
+- If you want to show an underlying 2D parameter, you can show a transparent superinposed layer of that parameter. Adjust the opaqueness between 0 and 1.
+
