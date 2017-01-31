@@ -1,7 +1,7 @@
 This little project was started because of my frustration
-when plotting many similar 2D plots of matrices for my master thesis.
+when plotting many movies of scalar fields for my master thesis.
 
-I had done alot of simulations of superconducting films and wanted to make a movies of the evolution of the 2D system. I had a time series of various scalar and vector fields, but no automated way to produce plots.
+I had done many simulation results of superconducting films and wanted to make movies of the evolution of the 2D scalar fields. I had a time series of various scalar fields, but no automated way to produce plots.
 
 Using numpy and matplotlib I came up with the following features for the resulting script:
 - We want to select a specific area of the 2D matrix so in the program you must specify xmin, xmax, ymin, ymax. Make sure you don't set them out of bounds of your matrices.
