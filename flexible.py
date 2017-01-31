@@ -4,9 +4,7 @@ import shutil
 
 import numpy as np
 from matplotlib import mlab, cm, rcParams, colorbar, pyplot as plt
-
 from parameters import *
-from farger import plasma, viridis, inferno
 
 def last_inn_matrise(path):
     return np.transpose(np.loadtxt(path))

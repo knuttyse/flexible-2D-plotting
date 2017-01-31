@@ -1,5 +1,4 @@
 from matplotlib import  cm
-from colormaps import plasma, viridis, inferno
 
 # Parameters:
 xmin = 0
@@ -8,7 +7,7 @@ ymin = 0
 ymax = 512
 
 # What colormap should be used?:
-cmap = cm.Reds_r # or plasma for example
+cmap = cm.Reds_r
 
 # Do you want a vertical or horizontal colorbar?:
 colorbar_orientation = 'vertical' #'horizontal'
